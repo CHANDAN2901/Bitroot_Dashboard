@@ -40,9 +40,17 @@ const CircularArrowButton = () => (
 );
 
 const ProjectDashboard = () => {
+  const [isLogoutModalVisible, setIsLogoutModalVisible] = useState(false);
+
+  const showLogoutModal = () => setIsLogoutModalVisible(true);
+  const handleLogout = () => setIsLogoutModalVisible(false);
+  const handleCancel = () => setIsLogoutModalVisible(false);
+
   const menu = (
     <Menu>
-      <Menu.Item key="1">Logout</Menu.Item>
+      <Menu.Item key="1" icon={<LogoutOutlined />} onClick={showLogoutModal}>
+        Logout
+      </Menu.Item>
     </Menu>
   );
 
@@ -180,6 +188,16 @@ const ProjectDashboard = () => {
           </Col>
         </Row>
       </Content>
+      <Modal
+        title="Logout Confirmation"
+        visible={isLogoutModalVisible}
+        onOk={handleLogout}
+        onCancel={handleCancel}
+        okText="Logout"
+        cancelText="Cancel"
+      >
+        <p>Are you sure you want to logout?</p>
+      </Modal>
     </Layout>
   );
 };
