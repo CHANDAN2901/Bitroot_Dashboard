@@ -4,25 +4,28 @@ import {
   Card,
   Calendar,
   Typography,
+  Progress,
   Row,
   Col,
   Button,
   Avatar,
   Dropdown,
   Menu,
+  Modal,
 } from "antd";
 import {
   UserOutlined,
   SettingOutlined,
-  ArrowRightOutlined,
+  LogoutOutlined,
+  ArrowRightOutlined
 } from "@ant-design/icons";
 
 const { Header, Content } = Layout;
 const { Title, Text } = Typography;
 
 const projectData = {
-  projectName: "Project Name",
-  clientName: "Client Name",
+  projectName: "Bitroot DashBoard",
+  clientName: "Chandan Yadav",
   currentStage: "Scope Finalization",
   previousStage: "Requirement Gathering",
   nextStage: "Documentation",
@@ -59,7 +62,7 @@ const ProjectDashboard = () => {
       {" "}
       <Header className="bg-white px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <img src="/logo.png" alt="Bitroot" className="h-8 mr-2" />
+          <img src="/logo.png" alt="Bitroot" className="h-10 mr-2" />
         </div>
         <div className="flex items-center">
           <Dropdown overlay={menu} placement="bottomRight" arrow>
