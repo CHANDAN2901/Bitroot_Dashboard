@@ -48,7 +48,7 @@ const HeaderComponent = ({ clientName, onLogout }) => {
   );
 
   return (
-    <Header className="bg-blue-100 px-4 flex items-center justify-between sm:px-6 sm:py-8 border-b-2">
+    <Header className="bg-white px-4 flex items-center justify-between sm:px-6 sm:py-8 border-b-2">
       <div className="flex items-center">
         <img src="/logo.png" alt="Bitroot" className="h-7 sm:h-12 m-2 sm:m-4" />
       </div>
