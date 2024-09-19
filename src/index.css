@@ -87,3 +87,24 @@
   top: 50% !important;
   margin-top: -6px !important;
 }
+
+.custom-timeline .ant-timeline-item-head {
+  background: none !important;
+  padding: 0 !important;
+}
+.custom-timeline .ant-timeline-item-head-custom {
+  background: none !important;
+  width: auto !important;
+  height: auto !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+}
+.custom-timeline .ant-timeline-item-tail {
+  border-left: 4px solid #2563eb !important;
+}
+.custom-timeline .ant-timeline-item {
+  padding-bottom: 80px;
+}
+.custom-timeline .ant-timeline-item-pending .ant-timeline-item-tail {
+  border-left: 4px solid #9CA3AF !important;
+}
