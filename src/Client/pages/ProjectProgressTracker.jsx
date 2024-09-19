@@ -8,6 +8,7 @@ import {
   ClockCircleOutlined,
 } from "@ant-design/icons";
 import ProjectStageModal from "../components/ProjectStageModal";
+import "../../index.css"
 
 const { Text } = Typography;
 
@@ -166,28 +167,6 @@ const ProjectTimelineTracker = () => {
         onClose={handleCloseModal}
         stage={selectedStage}
       />
-      <style>{`
-          .custom-timeline .ant-timeline-item-head {
-            background: none !important;
-            padding: 0 !important;
-          }
-          .custom-timeline .ant-timeline-item-head-custom {
-            background: none !important;
-            width: auto !important;
-            height: auto !important;
-            margin-top: 0 !important;
-            padding: 0 !important;
-          }
-          .custom-timeline .ant-timeline-item-tail {
-            border-left: 4px solid #2563eb !important;
-          }
-          .custom-timeline .ant-timeline-item {
-            padding-bottom: 80px;
-          }
-          .custom-timeline .ant-timeline-item-pending .ant-timeline-item-tail {
-            border-left: 4px solid #9CA3AF !important;
-          }
-        `}</style>
     </div>
   );
 };
